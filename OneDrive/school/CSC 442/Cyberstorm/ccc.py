@@ -15,11 +15,14 @@ from sys import stdout
 # enables debugging output
 DEBUG = False
 
-# set the server's IP address and port
-ip = '138.47.99.64'
-#port = 1337
-port = 12000
-
+if sys.argv[1] == null:
+    # set the server's IP address and port
+    ip = '138.47.99.64'
+    #port = 1337
+    port = 12000
+else:
+    ip = sys.argv[1]
+    port = sys.argv[2]
 # using the time 0 or 1 for the covert message
 tt1 = 0.025
 tt2 = .1
