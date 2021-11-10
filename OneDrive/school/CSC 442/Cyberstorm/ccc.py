@@ -20,6 +20,9 @@ if sys.argv[1] == null:
     ip = '138.47.99.64'
     #port = 1337
     port = 12000
+elif sys.argv[2] == null:
+    ip = sys.argv[1]
+    port = 22
 else:
     ip = sys.argv[1]
     port = sys.argv[2]
